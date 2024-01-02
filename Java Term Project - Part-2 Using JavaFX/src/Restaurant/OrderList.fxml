@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="quantuty" prefHeight="684.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restaurant.OrderListController">
+   <children>
+      <Label layoutX="311.0" layoutY="184.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="317.0" layoutY="70.0" prefHeight="39.0" prefWidth="150.0" text="OrderItems">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView layoutX="145.0" layoutY="166.0" prefHeight="147.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="foodname" prefWidth="151.19993591308594" text="Food Name" />
+          <TableColumn fx:id="foodprice" minWidth="0.0" prefWidth="173.60003662109375" text="Food Price" />
+            <TableColumn fx:id="foodquantity" prefWidth="191.199951171875" text="Quantity" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="137.0" layoutY="416.0" prefHeight="157.0" prefWidth="510.0" />
+   </children>
+</AnchorPane>
